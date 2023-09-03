@@ -1,0 +1,383 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#navbar::before{
+    content: "";
+    background-color: grey;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 12px 34px;
+    
+}
+
+#logo img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+#logo img:hover{
+    box-sizing: border-box;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    /* color: white; */
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: start;
+    align-items: center;
+    height: 605px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('/img/AIML_Group_Photo.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 12px;
+    padding-top: 100px;
+}
+
+#home p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    font-size: 1.33rem;
+    padding: 12px;
+    transform: scale(1.005);
+}
+
+#home strong{
+    color: rgb(187, 182, 229);
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 0px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.btn{
+    padding: 12px;
+    color: white;
+    border: 2px solid white;
+    background-color: purple;
+    margin: 17px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 2s;
+}
+
+.btn:hover{
+    background-color: black;
+}
+
+
+/* Serivces Section */
+#services-container{
+    background-color: white;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+#services{
+    display: flex;
+}
+
+#services .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    padding: 25px;
+    border-radius: 8px;
+    /* margin-top: 0px;
+    margin-top: 25px; */
+    margin: 3px 60px;
+    background-color: hsl(240, 29%, 97%);
+}
+
+#services .box:hover{
+    transform: scale(1.02);
+    background-color: hsl(240, 58%, 92%);
+}
+
+#services .box img{
+    border: 2px solid black;
+    border-radius: 12px;
+    border-style: dotted;
+    width: 160px;
+    height: 160px;
+    /* box-shadow: 3px 3px 2px black; */
+}
+
+#services .box p{
+    font-size: 18px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+
+/* About Section */
+#about-container{
+    background-color: black;
+    color: white;
+    /* display: flex; */
+}
+
+#about-container .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container .info img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 100px;
+    margin: 8px;
+}
+
+#about-container .info p{
+    margin: 28px 225px;
+}
+
+#about-container .connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container .connect strong{
+    font-size: 24px;
+    text-align: center;
+    padding-right: 12px;
+}
+
+#about-container .connect a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#about-container .connect a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Footer Section */
+footer{
+    background-color: black;
+    color: white;
+    margin:5px 0px;
+}
+
+footer h3{
+    text-align: center;
+}
+
+footer #footer{
+    text-align: center;
+}
+
+/* Utility Class */
+.h-primary{
+    font-size: 3rem;
+    padding: 12px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.h-secondary{
+    font-size: 2rem;
+    padding: 8px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.para{
+    font-size: 1.3rem;
+    text-align: center;
+    font-size: 18px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+/* chatGPT personalised CSS */
+
+/* Additional Personalized Styles */
+
+/* Navigation Bar: Add a subtle animation on hover */
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Home Section: Add a subtle fade-in animation */
+#home {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Services Section: Add a box-shadow and transition on hover */
+#services .box {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* About Section: Add a scale animation on hover for the image */
+#about-container .info img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+/* Footer: Add a subtle animation on hover */
+footer a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Utility Class: Add a subtle text-shadow to h1 headings */
+.h-primary {
+    font-size: 3rem;
+    padding: 12px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-family: cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Utility Class: Add a subtle text-shadow to h2 headings */
+.h-secondary {
+    font-size: 2rem;
+    padding: 8px;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Utility Class: Add a subtle text-shadow to paragraphs */
+.para {
+    font-size: 1.3rem;
+    text-align: center;
+    font-size: 18px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Add this media query at the end of your CSS to target mobile devices */
+
+@media (max-width: 768px) {
+    /* Reset any styles that need adjustment for smaller screens */
+
+    /* Example: Resetting the padding on the home section */
+    #home {
+        padding: 10px;
+    }
+
+    /* Adjust other styles for smaller screens */
+
+    /* Example: Reducing the font size for h1 in the home section */
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    /* You can continue to adjust styles as needed for mobile devices */
+}

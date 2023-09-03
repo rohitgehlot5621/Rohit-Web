@@ -1,0 +1,363 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#navbar::before {
+    content: "";
+    background-color: grey;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 2% 4%;
+}
+
+#logo img {
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+}
+
+#logo img:hover {
+    box-sizing: border-box;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 0 2%;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 2%;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 5%;
+    justify-content: start;
+    align-items: center;
+    min-height: 80vh;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('/img/blue-laptop.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 1% 0;
+}
+
+#home p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    font-size: 1.33rem;
+    padding: 1% 0;
+}
+
+#home strong {
+    color: rgb(187, 182, 229);
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 0px;
+    padding: 1% 0;
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 2% 4%;
+    color: white;
+    border: 2px solid white;
+    background-color: purple;
+    margin: 3% 0;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+/* Services Section */
+#services-container {
+    background-color: white;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+#services .box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    padding: 2% 3%;
+    border-radius: 8px;
+    margin: 2%;
+    background-color: hsl(240, 29%, 97%);
+    text-align: center;
+}
+
+#services .box:hover {
+    transform: scale(1.02);
+    background-color: hsl(240, 58%, 92%);
+}
+
+#services .box img {
+    border: 2px solid black;
+    border-radius: 12px;
+    border-style: dotted;
+    width: 60%;
+    height: auto;
+}
+
+#services .box p {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 2% 0;
+}
+
+/* About Section */
+#about-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0;
+}
+
+#about-container .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+}
+
+#about-container .info img {
+    width: 40%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 2% 0;
+}
+
+#about-container .info p {
+    margin: 2% 0;
+    text-align: center;
+}
+
+#about-container .connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+}
+
+#about-container .connect strong {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 1%;
+}
+
+#about-container .connect a {
+    color: white;
+    display: inline-block;
+    padding: 1% 2%;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 1% 1%;
+}
+
+#about-container .connect a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Footer Section */
+footer {
+    background-color: black;
+    color: white;
+    margin: 2% 0;
+    text-align: center;
+    padding: 2% 0;
+}
+
+footer h3 {
+    text-align: center;
+}
+
+footer #footer {
+    text-align: center;
+}
+
+/* Utility Class */
+.h-primary {
+    font-size: 3rem;
+    padding: 2% 0;
+    text-align: center;
+    font-weight: 700;
+    font-family: cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.h-secondary {
+    font-size: 2rem;
+    padding: 1% 0;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.para {
+    font-size: 1.3rem;
+    text-align: center;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles using Media Queries */
+
+/* For screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    /* Navbar */
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar ul li {
+        margin: 2% 0;
+    }
+
+    #navbar ul li a {
+        padding: 2% 0;
+    }
+
+    /* Home Section */
+    #home {
+        padding: 10% 5%;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+        padding-top: 10%;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 2% 4%;
+        font-size: 1.2rem;
+    }
+
+    /* Services Section */
+    #services .box {
+        flex: 1 1 45%;
+        margin: 2%;
+    }
+
+    #services .box img {
+        width: 100%;
+    }
+
+    #services .box p {
+        font-size: 1.2rem;
+    }
+
+    /* About Section */
+    #about-container .info img {
+        width: 60%;
+    }
+
+    #about-container .connect strong {
+        font-size: 1.6rem;
+    }
+
+    #about-container .connect a {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 2% 0;
+    }
+
+    footer h3 {
+        font-size: 1.6rem;
+    }
+}
